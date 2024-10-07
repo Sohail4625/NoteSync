@@ -55,22 +55,38 @@ const NoteDetails = () => {
   };
 
   if (!note) {
-    return <p>Loading note...</p>;
+    return <p className="text-center mt-4">Loading note...</p>;
   }
 
   return (
-    <div className="note-details">
-      <div className="note-actions">
-        <button onClick={handleEdit}>Edit Note</button>
-        <button onClick={handleViewVersions}>View Versions</button>
-        <button onClick={handleDelete}>Delete Note</button>
+    <div className="max-w-2xl mx-auto p-6 bg-white rounded-lg shadow-md">
+      <div className="flex justify-between mb-4">
+        <h1 className="text-2xl font-bold">{note.title}</h1>
+        <div className="space-x-2">
+          <button 
+            onClick={handleEdit} 
+            className="px-4 py-2 bg-blue-500 text-sm text-white rounded hover:bg-blue-600 transition">
+            Edit Note
+          </button>
+          <button 
+            onClick={handleViewVersions} 
+            className="px-4 py-2 bg-green-500 text-sm text-white rounded hover:bg-green-600 transition">
+            View Versions
+          </button>
+          <button 
+            onClick={handleDelete} 
+            className="px-4 py-2 bg-red-500 text-sm text-white rounded hover:bg-red-600 transition">
+            Delete Note
+          </button>
+        </div>
       </div>
 
-      <h1>{note.title}</h1>
-      <p>{note.content}</p>
+      <p className="text-gray-700 mb-4">{note.content}</p>
 
       <div className="note-meta">
-        <small>Last updated: {new Date(note.updatedAt).toLocaleString()}</small>
+        <small className="text-gray-500">
+          Last updated: {new Date(note.updatedAt).toLocaleString()}
+        </small>
       </div>
     </div>
   );
