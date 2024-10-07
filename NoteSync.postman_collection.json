@@ -26,7 +26,92 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "Get Note by ID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://notesync-24it.onrender.com/api/getNote/67037a9046299bfe2e4f8f15",
+							"protocol": "https",
+							"host": [
+								"notesync-24it",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"getNote",
+								"67037a9046299bfe2e4f8f15"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 07 Oct 2024 06:28:43 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "131"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-Ray",
+							"value": "8cebd5246b1d3965-MAA"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c5-372gHR7lkgkl5yuAaGwIlkrzIMA\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "rndr-id",
+							"value": "bdfcbc77-dc3f-4fdb"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"67037a9046299bfe2e4f8f15\",\n    \"title\": \"test\",\n    \"content\": \"testing\",\n    \"collaborators\": [\n        \"someone\"\n    ],\n    \"versions\": [],\n    \"createdAt\": \"2024-10-07T06:07:12.144Z\",\n    \"updatedAt\": \"2024-10-07T06:07:12.144Z\",\n    \"__v\": 0\n}"
+				}
+			]
 		},
 		{
 			"name": "Get all notes",
@@ -47,7 +132,91 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "Get all notes",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://notesync-24it.onrender.com/api/getNotes",
+							"protocol": "https",
+							"host": [
+								"notesync-24it",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"getNotes"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 07 Oct 2024 06:31:22 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1458"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-Ray",
+							"value": "8cebd90ad90c800d-MAA"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"12fd-cimOCpn80lr2t1l1Jf4Qc/VhjIw\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "rndr-id",
+							"value": "393a099f-f995-49a6"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"670365a474257d1a39a85b24\",\n        \"title\": \"Project Meeting Notes\",\n        \"content\": \"Meeting Date: October 20, 2024\\n\\nReviewed final product: Presented the completed project to the team and stakeholders.\\nConducted final testing: Ensured the product meets all quality standards and performance requirements.\\nPrepared launch plan: Developed a strategy for releasing the product to the target audience.\\nCelebrated success: Recognized the team's achievements and discussed future projects.\",\n        \"collaborators\": [\n            \"Alice\",\n            \"Bob\",\n            \"Charlie\"\n        ],\n        \"versions\": [\n            {\n                \"content\": \"Meeting Date: October 5, 2024\\n\\n- Discussed project timeline and deliverables\\n- Assigned tasks to team members\\n- Deadline for initial prototype: October 15, 2024\\n- Next meeting: October 10, 2024, to review progress\\n\",\n                \"createdAt\": \"2024-10-07T05:46:47.549Z\",\n                \"_id\": \"670375c78b17fbbc39e6fdd9\"\n            },\n            {\n                \"content\": \"Meeting Date: October 10, 2024\\n\\nReviewed project progress: Discussed initial prototype development and identified areas for improvement.\\nRevised timeline: Adjusted the deadline for the final prototype to October 20, 2024, to accommodate feedback and refinements.\\nAssigned additional tasks: Delegated responsibilities for testing, documentation, and user interface enhancements.\\nNext meeting: Scheduled for October 15, 2024, to review the revised prototype and discuss any remaining challenges.\",\n                \"createdAt\": \"2024-10-07T05:47:13.587Z\",\n                \"_id\": \"670375e18b17fbbc39e6fde3\"\n            },\n            {\n                \"content\": \"Meeting Date: October 15, 2024\\n\\nReviewed revised prototype: Evaluated the prototype based on user feedback and identified areas for further refinement.\\nSet goals for final product: Defined key performance indicators and quality standards to be met.\\nAssigned tasks for finalization: Delegated responsibilities for completing the remaining features, conducting final testing, and preparing documentation.\\nNext meeting: Scheduled for October 20, 2024, to review the final product and prepare for launch.\",\n                \"createdAt\": \"2024-10-07T05:47:33.297Z\",\n                \"_id\": \"670375f58b17fbbc39e6fdf0\"\n            },\n            {\n                \"content\": \"Meeting Date: October 20, 2024\\n\\nReviewed final product: Presented the completed project to the team and stakeholders.\\nConducted final testing: Ensured the product meets all quality standards and performance requirements.\\nPrepared launch plan: Developed a strategy for releasing the product to the target audience.\\nCelebrated success: Recognized the team's achievements and discussed future projects.\",\n                \"createdAt\": \"2024-10-07T06:05:42.813Z\",\n                \"_id\": \"67037a3646299bfe2e4f8edf\"\n            },\n            {\n                \"content\": \"Meeting Date: October 20, 2024\\n\\nReviewed final product: Presented the completed project to the team and stakeholders.\\nConducted final testing: Ensured the product meets all quality standards and performance requirements.\\nPrepared launch plan: Developed a strategy for releasing the product to the target audience.\\nCelebrated success: Recognized the team's achievements and discussed future projects.\",\n                \"createdAt\": \"2024-10-07T06:06:20.862Z\",\n                \"_id\": \"67037a5c46299bfe2e4f8efb\"\n            }\n        ],\n        \"createdAt\": \"2024-10-07T04:37:56.069Z\",\n        \"updatedAt\": \"2024-10-07T06:06:20.862Z\",\n        \"__v\": 5\n    },\n    {\n        \"_id\": \"670365d574257d1a39a85b3c\",\n        \"title\": \"JavaScript Best Practices\",\n        \"content\": \"- Use 'const' and 'let' instead of 'var'\\n- Prefer arrow functions for callbacks\\n- Modularize code using ES6 modules\\n- Keep functions small and focused on a single task\\n- Avoid global variables\\n\",\n        \"collaborators\": [\n            \"Sarah\",\n            \"John\"\n        ],\n        \"versions\": [\n            {\n                \"content\": \"- Use 'const' and 'let' instead of 'var'\\n- Prefer arrow functions for callbacks\\n- Modularize code using ES6 modules\\n- Keep functions small and focused on a single task\\n- Avoid global variables\\n\",\n                \"createdAt\": \"2024-10-07T05:56:48.131Z\",\n                \"_id\": \"6703782046299bfe2e4f8e6a\"\n            },\n            {\n                \"content\": \"Arrow functions have concise syntax and do not create their own this binding, making them ideal for callbacks and inline functions.\",\n                \"createdAt\": \"2024-10-07T05:57:10.417Z\",\n                \"_id\": \"6703783646299bfe2e4f8e78\"\n            },\n            {\n                \"content\": \"Global variables can lead to unintended side effects and make code harder to reason about. Use local variables or pass data as arguments to functions instead.\",\n                \"createdAt\": \"2024-10-07T05:58:18.832Z\",\n                \"_id\": \"6703787a46299bfe2e4f8eb7\"\n            }\n        ],\n        \"createdAt\": \"2024-10-07T04:38:45.591Z\",\n        \"updatedAt\": \"2024-10-07T05:58:18.832Z\",\n        \"__v\": 3\n    },\n    {\n        \"_id\": \"670365f674257d1a39a85b54\",\n        \"title\": \"Marketing Strategy\",\n        \"content\": \"- Focus on social media campaigns (Instagram, LinkedIn)\\n- Launch email marketing in mid-October\\n- Collaborate with influencers in the tech space\\n- Allocate $5,000 for paid advertisements\\n\",\n        \"collaborators\": [\n            \"Emily\",\n            \"David\",\n            \"Mark\"\n        ],\n        \"versions\": [],\n        \"createdAt\": \"2024-10-07T04:39:18.466Z\",\n        \"updatedAt\": \"2024-10-07T04:39:18.466Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"67037a9046299bfe2e4f8f15\",\n        \"title\": \"test\",\n        \"content\": \"testing\",\n        \"collaborators\": [\n            \"someone\"\n        ],\n        \"versions\": [],\n        \"createdAt\": \"2024-10-07T06:07:12.144Z\",\n        \"updatedAt\": \"2024-10-07T06:07:12.144Z\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
 		},
 		{
 			"name": "Get all versions of a note",
@@ -69,7 +238,96 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "Get all versions of a note",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://notesync-24it.onrender.com/api/versions/670365d574257d1a39a85b3c",
+							"protocol": "https",
+							"host": [
+								"notesync-24it",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"versions",
+								"670365d574257d1a39a85b3c"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 07 Oct 2024 06:32:33 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "389"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-Ray",
+							"value": "8cebdac7ff85801f-MAA"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2ed-YLbrVpUjWZpq5oSPhsuKvX/zCP0\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "rndr-id",
+							"value": "06936085-6c9d-40bc"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"content\": \"- Use 'const' and 'let' instead of 'var'\\n- Prefer arrow functions for callbacks\\n- Modularize code using ES6 modules\\n- Keep functions small and focused on a single task\\n- Avoid global variables\\n\",\n        \"createdAt\": \"2024-10-07T05:56:48.131Z\",\n        \"_id\": \"6703782046299bfe2e4f8e6a\"\n    },\n    {\n        \"content\": \"Arrow functions have concise syntax and do not create their own this binding, making them ideal for callbacks and inline functions.\",\n        \"createdAt\": \"2024-10-07T05:57:10.417Z\",\n        \"_id\": \"6703783646299bfe2e4f8e78\"\n    },\n    {\n        \"content\": \"Global variables can lead to unintended side effects and make code harder to reason about. Use local variables or pass data as arguments to functions instead.\",\n        \"createdAt\": \"2024-10-07T05:58:18.832Z\",\n        \"_id\": \"6703787a46299bfe2e4f8eb7\"\n    }\n]"
+				}
+			]
 		},
 		{
 			"name": "Creating a new note",
@@ -105,7 +363,106 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "Creating a new note",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Note Title\",\r\n    \"content\": \"This is the content of the note.\",\r\n    \"collaborators\": [\"Collaborator1\", \"Collaborator2\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://notesync-24it.onrender.com/api/create",
+							"protocol": "https",
+							"host": [
+								"notesync-24it",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"create"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 07 Oct 2024 06:35:57 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "150"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-Ray",
+							"value": "8cebdfbb5d5e7f91-MAA"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"fa-xfz8FpizmpvWxoVsLs2An5Q6aSI\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "rndr-id",
+							"value": "9510131c-2e4c-4e9e"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"title\": \"Note Title\",\n    \"content\": \"This is the content of the note.\",\n    \"collaborators\": [\n        \"Collaborator1\",\n        \"Collaborator2\"\n    ],\n    \"_id\": \"6703814cc0aff511d3ee7822\",\n    \"versions\": [],\n    \"createdAt\": \"2024-10-07T06:35:56.810Z\",\n    \"updatedAt\": \"2024-10-07T06:35:56.810Z\",\n    \"__v\": 0\n}"
+				}
+			]
 		},
 		{
 			"name": "Updating a note",
@@ -142,10 +499,110 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "Updating a note",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"content\": \"Checking the update API\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://notesync-24it.onrender.com/api/update/670365d574257d1a39a85b3c",
+							"protocol": "https",
+							"host": [
+								"notesync-24it",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"update",
+								"670365d574257d1a39a85b3c"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 07 Oct 2024 06:40:45 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "527"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-Ray",
+							"value": "8cebe6caca5f7f0f-MAA"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"4f7-EDSozBA8puMqL/5qV3R8Q95Z+hU\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "rndr-id",
+							"value": "bc99db29-d419-4d01"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"670365d574257d1a39a85b3c\",\n    \"title\": \"JavaScript Best Practices\",\n    \"content\": \"Checking the update API\",\n    \"collaborators\": [\n        \"Sarah\",\n        \"John\"\n    ],\n    \"versions\": [\n        {\n            \"content\": \"- Use 'const' and 'let' instead of 'var'\\n- Prefer arrow functions for callbacks\\n- Modularize code using ES6 modules\\n- Keep functions small and focused on a single task\\n- Avoid global variables\\n\",\n            \"createdAt\": \"2024-10-07T05:56:48.131Z\",\n            \"_id\": \"6703782046299bfe2e4f8e6a\"\n        },\n        {\n            \"content\": \"Arrow functions have concise syntax and do not create their own this binding, making them ideal for callbacks and inline functions.\",\n            \"createdAt\": \"2024-10-07T05:57:10.417Z\",\n            \"_id\": \"6703783646299bfe2e4f8e78\"\n        },\n        {\n            \"content\": \"Global variables can lead to unintended side effects and make code harder to reason about. Use local variables or pass data as arguments to functions instead.\",\n            \"createdAt\": \"2024-10-07T05:58:18.832Z\",\n            \"_id\": \"6703787a46299bfe2e4f8eb7\"\n        },\n        {\n            \"content\": \"- Use 'const' and 'let' instead of 'var'\\n- Prefer arrow functions for callbacks\\n- Modularize code using ES6 modules\\n- Keep functions small and focused on a single task\\n- Avoid global variables\\n\",\n            \"createdAt\": \"2024-10-07T06:40:45.622Z\",\n            \"_id\": \"6703826dc0aff511d3ee7828\"\n        }\n    ],\n    \"createdAt\": \"2024-10-07T04:38:45.591Z\",\n    \"updatedAt\": \"2024-10-07T06:40:45.623Z\",\n    \"__v\": 4\n}"
+				}
+			]
 		},
 		{
-			"name": "New Request",
+			"name": "Deleting a note",
 			"request": {
 				"method": "DELETE",
 				"header": [],
@@ -164,7 +621,101 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "Deleting a note",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://notesync-24it.onrender.com/api/delete/6703814cc0aff511d3ee7822",
+							"protocol": "https",
+							"host": [
+								"notesync-24it",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"delete",
+								"6703814cc0aff511d3ee7822"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 07 Oct 2024 06:42:13 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "41"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-Ray",
+							"value": "8cebe8ecec527f43-MAA"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"27-eRA9GiVZL6kII4bX/HmG//anwi0\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "rndr-id",
+							"value": "5dbe94ea-835d-4be7"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Note deleted successfully\"\n}"
+				}
+			]
 		}
 	]
 }
