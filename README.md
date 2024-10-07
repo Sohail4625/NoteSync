@@ -13,5 +13,5 @@ A real-time collaborative notes app where multiple users can create, edit, and u
 - **React.js:** For building the web pages and other frontend parts.
 - **MongoDB:** To store all the notes and their previous versions in the database.
 - **Socket.io:** To build web sockets so that multiple users can edit a note at the same time.
-
+## Postman-api-collection-json - [link](https://github.com/Sohail4625/NoteSync/blob/master/NoteSync.postman_collection.json)
 ## Live link - [NoteSync](https://notesync-24it.onrender.com)
