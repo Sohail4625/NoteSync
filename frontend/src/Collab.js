@@ -26,7 +26,7 @@ const CollaborativeNote = () => {
 
     fetchNote();
 
-    const newSocket = io("http://localhost:5000");
+    const newSocket = io("https://notesync-24it.onrender.com");
     setSocket(newSocket);
 
     // Listen for updates from other clients
